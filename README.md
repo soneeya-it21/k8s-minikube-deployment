@@ -1,6 +1,6 @@
-🚀 Kubernetes Minikube Deployment - Build a Kubernetes Cluster Locally with Minikube
+🚀 TASK - Build a Kubernetes Cluster Locally with Minikube
 
-This project demonstrates how to build a Kubernetes cluster locally using **Minikube** and deploy a simple **NGINX application**.
+✔️ This project demonstrates how to build a Kubernetes cluster locally using **Minikube** and deploy a simple **NGINX application**.
 
 🛠 Tools Used
 
