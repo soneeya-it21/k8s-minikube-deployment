@@ -57,6 +57,10 @@ Visit your app: http://<your-EC2-public-IP>:30094
 
 📸 Screenshots
 ![Nginx deployment](https://github.com/user-attachments/assets/9d14b5b3-a952-4903-b8a2-8a314dcaa8cc)
+![Pods running](https://github.com/user-attachments/assets/3a241820-154e-4131-b097-ba2d6367735d)
+![kubectl get svc ](https://github.com/user-attachments/assets/764e362b-27a2-4bb6-a792-5898a2f04216)
+![log of pod-nginx-deployment-96b9d695-dx5k2](https://github.com/user-attachments/assets/5448071a-d256-4530-9ca8-bcc4230f130a)
+![pod log](https://github.com/user-attachments/assets/6cc9cfa7-1589-4fca-bed5-dc62fc598144)
 
 🙌 Author
 GitHub: @soneeya-it21
