@@ -1,23 +1,23 @@
-# 🚀 Kubernetes Minikube Deployment
+🚀 Kubernetes Minikube Deployment - Build a Kubernetes Cluster Locally with Minikube
 
 This project demonstrates how to build a Kubernetes cluster locally using **Minikube** and deploy a simple **NGINX application**.
 
-## 🛠 Tools Used
+🛠 Tools Used
 
 - Minikube
 - kubectl
 - Docker
 - EC2 Ubuntu Instance
 
-## 📦 What’s Inside
+📦 What’s Inside
 
 - `deployment.yaml` - Kubernetes Deployment configuration for the NGINX app  
 - `service.yaml` - NodePort Service to expose the app  
 - Sample commands to interact with the cluster
 
-## ⚙️ Steps to Run
+⚙️ Steps to Run
 
-### 1. Install Prerequisites
+1. Install Prerequisites
 
 - Docker
 - Minikube
@@ -25,8 +25,38 @@ This project demonstrates how to build a Kubernetes cluster locally using **Mini
 - cri-dockerd (for none driver)
 - container networking plugins
 
-### 2. Start Minikube
-
-```bash
+2. Start Minikube
 minikube start --driver=none
 Make sure Docker and required plugins are set up properly.
+
+3. Apply Deployment
+kubectl apply -f deployment.yaml
+
+5. Expose the Deployment via NodePort
+kubectl apply -f service.yaml
+
+7. Verify Resources
+kubectl get pods
+kubectl get svc
+
+9. Scale the App
+kubectl scale deployment nginx-deployment --replicas=3
+
+11. Check Logs
+kubectl logs <pod-name>
+
+✅ Output Sample
+kubectl get pods
+NAME                              READY   STATUS    RESTARTS   AGE
+nginx-deployment-96b9d695-abcde   1/1     Running   0          2m
+...
+kubectl get svc
+NAME            TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
+nginx-service   NodePort    10.106.138.253   <none>        80:30094/TCP   2m
+Visit your app: http://<your-EC2-public-IP>:30094
+
+📸 Screenshots
+![Nginx deployment](https://github.com/user-attachments/assets/9d14b5b3-a952-4903-b8a2-8a314dcaa8cc)
+
+🙌 Author
+GitHub: @soneeya-it21
