@@ -56,6 +56,7 @@ nginx-service   NodePort    10.106.138.253   <none>        80:30094/TCP   2m
 Visit your app: http://<your-EC2-public-IP>:30094
 
 📸 Screenshots
+![image](https://github.com/user-attachments/assets/fc738df1-66fa-411a-a114-204cc7c76581)
 ![Nginx deployment](https://github.com/user-attachments/assets/9d14b5b3-a952-4903-b8a2-8a314dcaa8cc)
 ![Pods running](https://github.com/user-attachments/assets/3a241820-154e-4131-b097-ba2d6367735d)
 ![kubectl get svc ](https://github.com/user-attachments/assets/764e362b-27a2-4bb6-a792-5898a2f04216)
